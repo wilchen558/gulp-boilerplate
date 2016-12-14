@@ -1,6 +1,10 @@
 // styles.scss
-.testing {
+.used {
   width: percentage(5/7);
+}
+
+.not-used {
+  width: percentage(6/7);
 }
 
 body {

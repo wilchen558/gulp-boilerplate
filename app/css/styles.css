@@ -1,5 +1,8 @@
-.testing {
+.used {
   width: 71.42857%; }
+
+.not-used {
+  width: 85.71429%; }
 
 body {
   background-color: red; }
