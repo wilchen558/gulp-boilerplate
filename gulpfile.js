@@ -41,6 +41,9 @@ gulp.task('watch', function() {
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
+// Linting
+// http://www.creativenightly.com/2016/02/How-to-lint-your-css-with-stylelint/#how-to-lint-your-sass
+
 // Optimization Tasks
 // ------------------
 
@@ -61,6 +64,7 @@ gulp.task('useref', function() {
 gulp.task('images', function() {
     return gulp.src('app/images/**/*.+(png|jpg|jpeg|gif|svg)')
         // Caching images that ran through imagemin
+        .pipe(imagemin())
         .pipe(cache(imagemin({
             interlaced: true,
         })))
